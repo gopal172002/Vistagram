@@ -7,10 +7,85 @@ A full-stack web application that blends "Visit" and "Instagram" for Points of I
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
 ![MongoDB](https://img.shields.io/badge/MongoDB-8.0+-orange)
 
+## 📋 Table of Contents
+
+- [📖 Project Overview](#-project-overview)
+- [🚀 Live Demo](#-live-demo)
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📦 Installation](#-installation)
+- [🔧 Configuration](#-configuration)
+- [📚 API Documentation](#-api-documentation)
+- [🎨 UI/UX Features](#-uiux-features)
+- [🧪 Testing](#-testing)
+- [🚀 Deployment](#-deployment)
+- [📊 Performance Optimization](#-performance-optimization)
+- [🔒 Security Features](#-security-features)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
+- [📞 Support](#-support)
+- [🎯 Roadmap](#-roadmap)
+
+## 📖 Project Overview
+
+Vistagram is a modern social media platform designed specifically for travelers and adventure seekers. It combines the best features of Instagram with location-based discovery, allowing users to:
+
+- 📸 **Share Travel Moments**: Capture and share photos from amazing destinations
+- 🗺️ **Location Discovery**: Find new places through geotagged posts
+- 👥 **Connect with Travelers**: Follow other adventurers and discover their journeys
+- 💬 **Engage with Content**: Like, comment, and save posts from around the world
+- 📱 **Mobile-First Design**: Optimized for capturing and sharing on the go
+
+The platform features a beautiful dark theme with violet accents, real-time updates, and a responsive design that works seamlessly across all devices.
+
 ## 🚀 Live Demo
 
-- **Frontend**: [Vistagram App](https://your-deployment-url.com)
-- **Backend API**: [API Documentation](https://your-api-url.com/api/health)
+- **Frontend**: [Vistagram App](https://vistagram-zye2.vercel.app/)
+- **Demo Video**: [Watch Demo](https://youtu.be/tCd4I_sWB5E?si=NXHVjuUVTUOoAwrk)
+- **GitHub Repository**: [View Source Code](https://github.com/gopal172002/Vistagram/)
+
+### 📸 Demo Screenshots
+
+#### 🏠 Home Page
+<div align="center">
+  <img src="frontend/public/Home.png" alt="Vistagram Home Page" width="400" />
+</div>
+
+#### 👤 User Profile
+<div align="center">
+  <img src="frontend/public/Profile.png" alt="User Profile Page" width="400" />
+</div>
+
+#### 🔐 Login Page
+<div align="center">
+  <img src="frontend/public/Login (2).png" alt="Login Page" width="400" />
+</div>
+
+#### 📝 Registration Page
+<div align="center">
+  <img src="frontend/public/Register (2).png" alt="Registration Page" width="400" />
+</div>
+
+#### 📱 Timeline Feed
+<div align="center">
+  <img src="frontend/public/timelines.png" alt="Timeline Feed" width="400" />
+</div>
+
+#### 💬 Comments Section
+<div align="center">
+  <img src="frontend/public/comments.png" alt="Comments Section" width="400" />
+</div>
+
+#### 🔔 Notifications
+<div align="center">
+  <img src="frontend/public/notifications.png" alt="Notifications" width="400" />
+</div>
+
+#### ✏️ Update Profile
+<div align="center">
+  <img src="frontend/public/Update_profile.png" alt="Update Profile" width="400" />
+</div>
 
 ## ✨ Features
 
@@ -115,13 +190,19 @@ A full-stack web application that blends "Visit" and "Instagram" for Points of I
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/vistagram.git
-   cd vistagram
+   git clone https://github.com/gopal172002/Vistagram.git
+   cd Vistagram
    ```
 
 2. **Install dependencies**
    ```bash
-   npm run install-all
+   # Install backend dependencies
+   cd backend
+   npm install
+   
+   # Install frontend dependencies
+   cd ../frontend
+   npm install
    ```
 
 3. **Set up environment variables**
@@ -133,8 +214,8 @@ A full-stack web application that blends "Visit" and "Instagram" for Points of I
    
    # Frontend
    cd ../frontend
-   cp .env.example .env
-   # Edit .env with your configuration
+   # Create .env file if needed
+   echo "REACT_APP_API_URL=http://localhost:5000/api" > .env
    ```
 
 4. **Set up MongoDB**
@@ -146,7 +227,7 @@ A full-stack web application that blends "Visit" and "Instagram" for Points of I
    # Update MONGODB_URI in backend/.env
    ```
 
-5. **Seed the database**
+5. **Seed the database (optional)**
    ```bash
    cd backend
    npm run seed
@@ -154,8 +235,13 @@ A full-stack web application that blends "Visit" and "Instagram" for Points of I
 
 6. **Start the development servers**
    ```bash
-   # From root directory
+   # Start backend server
+   cd backend
    npm run dev
+   
+   # In another terminal, start frontend
+   cd frontend
+   npm start
    ```
 
 7. **Access the application**
@@ -363,11 +449,12 @@ git push heroku main
 
 ### Frontend Deployment
 
-#### Vercel
+#### Vercel (Current Deployment)
 1. Connect your GitHub repository
 2. Set build command: `npm run build`
 3. Set output directory: `build`
 4. Deploy automatically
+5. **Live URL**: https://vistagram-zye2.vercel.app/
 
 #### Netlify
 1. Connect your GitHub repository
@@ -435,12 +522,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Unsplash** for sample images
 - **React Community** for amazing tools and libraries
 - **MongoDB** for the flexible database solution
-
-## 📞 Support
-
-- **Email**: support@vistagram.com
-- **Issues**: [GitHub Issues](https://github.com/yourusername/vistagram/issues)
-- **Documentation**: [Wiki](https://github.com/yourusername/vistagram/wiki)
 
 ## 🎯 Roadmap
 

@@ -293,3 +293,4 @@ const CommentSection = ({ postId, commentCount = 0, onCommentAdded }) => {
 };
 
 export default CommentSection;
+
